@@ -1,0 +1,112 @@
+body{
+    margin: 0%;
+     background-image: url(img2.jpg);
+     background-repeat: no-repeat;
+     
+     background-size: 100% 100%;
+     }
+     #name{
+        color:#ffffff;
+         background-color: #1bcf2d;
+        animation: glow 1s ease-in-out infinite alternate;
+        display: inline;
+        
+        font-weight: bold;
+        position: absolute;
+        left: 30%;
+        top: 93%;
+     }
+ #video{
+     width: 100vw;
+     height: 100vh;
+     background-image: url(img19.jpg),url(img11.jpg);
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: 45% 100% , 43% 100%;
+     background-position: 100% 0% , 0% 100%;
+ }
+     #head{
+         
+         color:#ffffff;
+         
+         animation: glow 1s ease-in-out infinite alternate;
+         display: inline;
+         
+         font-weight: bold;
+         position: absolute;
+         left: 8%;
+         top: 1%;
+         }
+         #img{
+             position: absolute;
+             left: 30%;
+             top: 1%;
+             height: 200px;
+             width: 200px;
+             border-radius: 50%;
+         }
+         h2{
+             
+         color:#e2af14;
+         
+         animation: glow 1s ease-in-out infinite alternate;
+         display: inline;
+         background-color: ;
+         font-weight: bold;
+         position: absolute;
+         left: 8%;
+         top: 12%; 
+         }
+         #about{
+             width: 42vw;
+             height: 100vh;
+             position: absolute;
+             top:20% ;
+             
+         }
+         .rj{
+              
+         color:#ffffff;
+         
+         animation: glow 1s ease-in-out infinite alternate;
+         display: inline;
+         
+         font-weight: bold;
+         padding-left: 59px;
+         
+          
+         
+         }
+         p,ul{
+                
+         color:#1bcf2d;
+         
+         animation: glow 1s ease-in-out infinite alternate;
+         display: inline;
+         padding-left: 80px;
+         font-weight: bold;   
+         }
+         @media all and (min-width:767px) and (max-width:1023px){
+             
+             #img{
+                 height: 90px;
+                 width: 90px;
+                 position: absolute;
+                 top: 10%;
+             }
+         }
+         @media all and (min-width:25px) and (max-width:766px){
+             
+             #img{
+                 height: 60px;
+                 width: 60px;
+                 position: absolute;
+                 top: 10%;
+             }
+ 
+         }
+ 
+             
+ 
+             
+     

@@ -1,0 +1,24 @@
+h2{
+    text-align: center;
+}
+#parent{
+    height: 700px;
+    width: 75%;
+    border: 1px solid red;
+    margin: auto;
+   display: flex;
+   flex-direction: column;
+     
+    
+    
+    
+    
+}
+#parent>div{
+    border: 1px solid rgb(57, 14, 197);
+    
+
+}
+#parent>div>div{
+    border: 1px solid black;
+}

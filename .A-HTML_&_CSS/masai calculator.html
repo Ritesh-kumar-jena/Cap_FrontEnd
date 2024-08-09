@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-weight: bold;
+            color: rgba(25, 157, 162, 0.827);
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 30px;
+            font-size: 40px;
+        }
+        #parent{
+            width: 40%;
+            margin: auto;
+           
+            display: grid;
+            grid-template-columns: repeat(4,60px);
+            grid-auto-rows: 60px;
+            gap: 10px;
+            justify-content: center;
+            padding: 50px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #parent>div{
+            text-align: center;
+            padding: 20px 0px;
+            border-radius: 10px;
+            font-weight: bold;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        }
+        #parent>div:nth-child(1){
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        .mark{
+            background-color: black;
+            color: aliceblue;
+        }
+        @media all and (min-width:1020px) and (max-width:2000px){
+            #parent{
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Masai Calculator</h1>
+    <div id="parent">
+        <div></div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div class="mark">+</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div  class="mark">-</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div  class="mark">*</div>
+        <div style="background-color: red; color: aliceblue;">C</div>
+        <div>0</div>
+        <div class="mark">=</div>
+        <div class="mark">/</div>
+        
+        
+    </div>
+</body>
+</html>
