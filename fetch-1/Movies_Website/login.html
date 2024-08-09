@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <style>
+    body {
+  font-family: sans-serif;
+  background-image: url(https://wallpaper.dog/large/5543612.jpg);
+  background-size: cover;   
+}
+
+.container {
+  width: 500px;
+  height: 400px;
+  margin-left: 40%;
+  margin-top: 10%;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
+
+form {
+  padding: 20px;
+}
+
+input {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  border-radius: 30px;
+}
+
+button {
+  width: 70%;
+  background-color: #e30f0f;
+  color: #fff;
+  padding: 10px;
+  margin-left: 10%;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+button:hover{
+    background-color: red;
+    font-weight: bold;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Login</h1>
+    <form id="login-form">
+      <input id="email" type="email" name="email" placeholder="Email" required>
+      <input id="password" type="password" name="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+<script>
+  let email=document.getElementById("email")
+  let password=document.getElementById("password")
+  let myfrom=document.getElementById("login-form")
+  let storedEmail=localStorage.getItem("email")
+  let storedPassword=localStorage.getItem("password")
+  console.log(storedPassword)
+  myfrom.addEventListener("submit",function(ele){
+    ele.preventDefault()
+    if(email.value===storedEmail&&password.value===storedPassword){
+    window.location.href="movieSearchpage.html"
+  }
+  else{
+    alert("Invaild Email or Password")
+  }
+  
+  })
+ 
+
+</script>
+</html>
